@@ -1,18 +1,26 @@
+import { fetchRequests } from "./dataAccess.js"
+import { Requests } from "./Requests.js"
+import { ServiceForm } from "./ServiceForm.js"
 
 
 const mainContainer = document.querySelector("#container")
 
-const applicationHTML = `
-<h1>Maude and Merle's Sink Repair</h1>
-<article class="serviceForm">
+fetchRequests()
+    .then(
+        () => {
+            const applicationHTML = `
+                <h1>Maude and Merle's Sink Repair</h1>
+                <section class="serviceForm">
+                    ${ServiceForm()}
+                </section>
 
-</article>
+                <section class="serviceRequests">
+                    <h2>Service Requests</h2>
+                    ${Requests()}
+                </section>
+            `
 
-<article class="serviceRequests">
-    <h2>Service Requests</h2>
-
-</article>
-`
-
-mainContainer.innerHTML = applicationHTML
+            mainContainer.innerHTML = applicationHTML
+        }
+    )
 
