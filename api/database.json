@@ -1,42 +1,42 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Paulette Gutkowski",
-            "email": "me@me.com"
-        }
-    ],
-    "plumbers": [
-        {
-            "id": 1,
-            "name": "Maude"
-        },
-        {
-            "id": 2,
-            "name": "Merle"
-        }
-    ],
-    "requests": [
-        {
-            "id": 1,
-            "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
-            "address": "34445 Bianka Ports",
-            "budget": 400.00,
-            "neededBy": "Fri Aug 27 2021 13:13:47 GMT-0500 (Central Daylight Time)"
-        },
-        {
-            "id": 1,
-            "description": "Eum consequatur qui animi voluptate.",
-            "address": "81569 Trantow Cliffs",
-            "budget": 250.00,
-            "neededBy": "Sat Dec 18 2021 21:10:08 GMT-0600 (Central Standard Time)"
-        }
-    ],
-    "completions": [
-        {
-            "id": 1,
-            "requestId": 1,
-            "plumberId": 1
-        }
-    ]
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Maude"
+    },
+    {
+      "id": 2,
+      "name": "Merle"
+    }
+  ],
+  "requests": [
+    {
+      "id": 1,
+      "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
+      "address": "34445 Bianka Ports",
+      "budget": 400,
+      "neededBy": "2021-08-27"
+    },
+    {
+      "id": 2,
+      "description": "Eum consequatur qui animi voluptate.",
+      "address": "81569 Trantow Cliffs",
+      "budget": 250,
+      "neededBy": "2021-12-18"
+    },
+    {
+      "description": "Leaky bathtub faucet",
+      "address": "1000 Inifinity Way",
+      "budget": "900.00",
+      "neededBy": "2021-05-14",
+      "id": 3
+    }
+  ],
+  "completions": [
+    {
+      "id": 1,
+      "requestId": 1,
+      "plumberId": 1
+    }
+  ]
 }
