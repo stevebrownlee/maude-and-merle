@@ -4,15 +4,22 @@ export const Requests = () => {
     const requests = getRequests()
 
     let html = `
-        <ul>
+        <div class="requests">
             ${
                 requests.map(
-                    (request) => {
-                        return `<li>${request.description}</li>`
+                    (request, idx) => {
+                        return `
+                        <div class="request ${idx % 2 !== 1 ? "row--gray" : ""}">
+                            <div class="cell--requests request__description">${request.description}</div>
+                            <div class="cell--requests request__actions">
+                                <button class="request__delete" id="request--${request.id}">Delete</button>
+                            </div>
+                        </div>
+                        `
                     }
                 ).join("")
             }
-        </ul>
+        </div>
     `
 
     return html

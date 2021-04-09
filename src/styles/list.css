@@ -1,0 +1,31 @@
+.requests {
+    border: 1px dotted lightblue;
+}
+
+.row--gray {
+    background-color: rgb(235, 234, 234);
+}
+
+.request {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem;
+}
+
+.request__description {
+    flex: 4;
+    content: "\1F6E0  ";
+}
+
+.request__description {
+    flex: 4;
+}
+
+.request__actions {
+    flex: 1;
+    text-align: right;
+}
+
+.request__delete {
+    font-size: 0.9rem;
+}
