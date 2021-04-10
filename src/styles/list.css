@@ -2,8 +2,18 @@
     border: 1px dotted lightblue;
 }
 
-.row--gray {
+.request:nth-child(odd) {
     background-color: rgb(235, 234, 234);
+}
+
+.row--header {
+    display: flex;
+    flex-direction: row;
+    padding: 0.75rem;
+    font-weight: 900;
+    font-size: 1.1rem;
+    background-color: rgb(106, 122, 136);
+    color: aliceblue;
 }
 
 .request {
@@ -12,19 +22,32 @@
     padding: 0.75rem;
 }
 
+.request--completed {
+    background-color: rgb(255, 211, 211) !important;
+}
+
 .request__description::before {
     content: "\1F6E0  ";
 }
 
-.request__description {
-    flex: 4;
+.request__description, .request__description--header {
+    flex: 6;
 }
 
-.request__actions {
+.request__delete, .request__delete--header {
     flex: 1;
     text-align: right;
 }
 
+.request__completion, .request__completion--header {
+    flex: 2;
+}
+
 .request__delete {
+    max-height: 2.2rem;
     font-size: 0.9rem;
+}
+
+.plumbers {
+    padding: 0.2rem;
 }

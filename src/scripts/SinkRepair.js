@@ -5,7 +5,7 @@ export const SinkRepair = () => {
     return `
         <nav class="nav">
             <img class="nav__logo" src="./images/maude-merle.png" alt="Maude and Merle" />
-            <h1 class="nav__title"">Maude and Merle's Sink Repair</h1>
+            <h1 class="nav__title">Maude and Merle's Sink Repair</h1>
         </nav>
 
         <section class="serviceForm">
