@@ -20,7 +20,27 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
-#container {
-    padding: 3rem 5rem;
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: -2rem;
 }
 
+.nav__logo {
+    max-width: 15rem;
+}
+
+.nav__title {
+    padding-top: 3rem;
+}
+
+#container {
+    padding: 10rem 5rem 0 5rem;
+}
+
+.button {
+    background-color: rgb(167, 63, 219);
+    color: rgb(253, 248, 255);
+    font-size: 0.9rem;
+}

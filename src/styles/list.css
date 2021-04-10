@@ -12,8 +12,7 @@
     padding: 0.75rem;
 }
 
-.request__description {
-    flex: 4;
+.request__description::before {
     content: "\1F6E0  ";
 }
 
