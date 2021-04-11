@@ -17,8 +17,10 @@ mainContainer.addEventListener(
             const [requestId, plumberId] = event.target.value.split("--")
             const completion = {
                 plumberId: parseInt(plumberId),
-                requestId: parseInt(requestId)
+                requestId: parseInt(requestId),
+                date_created: Date.now()
             }
+
             completeRequest(completion)
         }
     }
