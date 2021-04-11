@@ -58,9 +58,7 @@ export const Requests = () => {
                                                     ).join("")
                                                 }
                                             </select>`
-
                                 }
-
                             </div>
                             <div class="request__delete">
                                 <button class="button request__delete" id="request--${request.id}">Delete</button>
