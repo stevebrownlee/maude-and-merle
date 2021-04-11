@@ -4,7 +4,7 @@ const applicationState = {
     completions: []
 }
 
-const API = "http://localhost:8088"
+const API = "http://repairapi.nss.team"
 const mainContainer = document.querySelector("#container")
 
 

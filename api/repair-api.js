@@ -4,10 +4,11 @@ const router = jsonServer.router('database.json')
 
 //const middlewares = jsonServer.defaults({ noCors: true })
 const middlewares = jsonServer.defaults()
-const port = process.env.PORT || 8089
+const port = process.env.PORT || 8092
 
 server.use(middlewares)
 
+/*
 server.use((req, res, next) => {
   if (req.method === 'GET') {
     next()
@@ -15,7 +16,7 @@ server.use((req, res, next) => {
     res.sendStatus(401)
   }
 })
-
+*/
 
 server.use(router)
 
